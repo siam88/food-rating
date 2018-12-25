@@ -10,7 +10,7 @@ export class Navbar extends Component {
 
                 <nav>
                     <div className="nav-wrapper">
-                        <a href="" className="brand-logo">Logo</a>
+                        <a href="" className="brand-logo">FOOD RIVIEW<i class="material-icons">bubble_chart</i></a>
                         <ul className="right hide-on-med-and-down">
                             
                             <li><a href="badges.html" ><i className="material-icons left" onClick={this.displayOn}>vadd_box</i>ADD</a></li>
