@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Rating from './rating';
+import Reaction from './reaction';
+
 
 class Table extends Component {
 
@@ -10,21 +11,21 @@ class Table extends Component {
         return (
             
             <div className="container">
-            <h4>Food Rated :</h4>
-                <hr /> 
+            
                 <div className="row">
                     
-                    <div className="chart  card hoverable ">
+                    <div className="chart col s6 offset-s3 card hoverable ">
                         
                         <table className="highlight">
                             <thead>
                                 <tr>
-                                    <th>Item Name</th>
-                                    <th>Item Type</th>
-                                    <th>Restrurant Name</th>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Restrurant</th>
                                     <th>Location</th>
-                                    <th>Item Price</th>
+                                    <th>Price</th>
                                     <th>Rating</th>
+                                    <th>like/dislike</th>
                                 </tr>
                             </thead>
 
@@ -36,7 +37,8 @@ class Table extends Component {
                                         <td>{e.restrurant}</td>
                                         <td>{e.location}</td>
                                         <td>{e.price}</td>
-                                        <td><Rating changeRate={e.rating} /></td>
+                                        <td>{e.rating} </td>
+                                        <td><Reaction/></td>
                                         
                                     </tr>
                                 )}

@@ -24,9 +24,9 @@ export class Reaction extends Component {
 
       <div >
         <div></div>
-        <button className="btn waves-effect waves-light " onClick={() => this.handleIncrement()} name="action">{this.state.increment_count}<i className="material-icons right">thumb_up</i>
+        <button className="btn waves-effect waves-light " onClick={() => this.handleIncrement()} name="action">{this.state.increment_count}<i className="material-icons right">add</i>
         </button> 
-        <button className="btn waves-effect waves-light " onClick={() => this.handlediscrement()} name="action">{this.state.discrement_count}<i className="material-icons right">thumb_down</i>
+        <button className="btn waves-effect waves-light " onClick={() => this.handlediscrement()} name="action">{this.state.discrement_count}<i className="material-icons right">minimize</i>
         </button>
         
        
