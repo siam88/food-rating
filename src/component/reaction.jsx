@@ -1,14 +1,36 @@
 import React, { Component } from 'react'
 
 export class Reaction extends Component {
-
+  constructor(props){
+    super(props);
+    this.state={
+      increment_count:0,
+      discrement_count:0
+    }
+  }
+  handleIncrement(){
+    this.setState({
+      increment_count: this.state.increment_count+1
+    });
+  }
+  handlediscrement() {
+    this.setState({
+      discrement_count: this.state.discrement_count + 1
+    });
+  }
   render() {
     
     return (
-      
+
       <div >
-        <a><i className="material-icons btn" >thumb_up_alt</i></a>
-        <a><i className="material-icons btn" >thumb_down</i></a>
+        <div></div>
+        <button className="btn waves-effect waves-light " onClick={() => this.handleIncrement()} name="action">{this.state.increment_count}<i className="material-icons right">thumb_up</i>
+        </button> 
+        <button className="btn waves-effect waves-light " onClick={() => this.handlediscrement()} name="action">{this.state.discrement_count}<i className="material-icons right">thumb_down</i>
+        </button>
+        
+       
+ 
       </div>
     )
   }
