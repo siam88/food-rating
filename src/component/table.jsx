@@ -8,9 +8,14 @@ class Table extends Component {
     }
     render() {
         return (
+            
             <div className="container">
+            <h4>Food Rated :</h4>
+                <hr /> 
                 <div className="row">
+                    
                     <div className="chart  card hoverable ">
+                        
                         <table className="highlight">
                             <thead>
                                 <tr>
@@ -32,11 +37,14 @@ class Table extends Component {
                                         <td>{e.location}</td>
                                         <td>{e.price}</td>
                                         <td><Rating changeRate={e.rating} /></td>
+                                        
                                     </tr>
                                 )}
                             </tbody>
                         </table>
                     </div>
+                    
+
                 </div>
             </div>
 

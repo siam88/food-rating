@@ -11,7 +11,9 @@ class Form extends Component {
 
             <div className="row ">
             <div id="form">
+            
                 <div className="valign-wrapper row" >
+                
                     <div className="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4 mainForm">
                         <h4>FOOD INFO:</h4>
                         <hr/>
@@ -48,7 +50,7 @@ class Form extends Component {
                         <div className="input-field col s8 offset-s2">
                             <i className="material-icons prefix">textsms</i>
                             <input id="last_name" type="text" className="validate" onChange={e => this.props.inputRate(e)} />
-                            <label for="last_name">Rating</label>
+                            <label for="last_name">Rating(input should be in number)</label>
                         </div>
                         
                         <div className="input-field col s12 ">

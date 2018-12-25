@@ -8,11 +8,16 @@ import Offer from './component/offer';
 class App extends Component {
   state = {
     items: [
-      { id: 1, name: "Chicken chese", type: "burger", restrurant: "chillox", location: "banani", price: "240", rating: 2 },
-      { id: 2, name: "Chicken chese", type: "burger", restrurant: "chillox", location: "banani", price: "240", rating: 2 },
-      { id: 3, name: "Chicken chese", type: "burger", restrurant: "chillox", location: "banani", price: "240", rating: 1 }
+      { id: 1, name: "Chicken chese", type: "Fastfood", restrurant: "Takeout", location: "banani", price: "240", rating: 3 },
+      { id: 2, name: "Chicken chese", type: "Fastfood", restrurant: "chillox", location: "banani", price: "240" ,rating: 5 },
+      { id: 3, name: "Chicken chese", type: "Fastfood", restrurant: "Mr.manik", location: "Uttara", price: "240",rating: 4 }
 
     ],
+    offerItems:[
+      { id: 1, name: "Chicken chese delight", type: "Fastfood", restrurant: "chillox", location: "banani", price: "240", offerPrice: "150", rating: 5 },
+      { id: 2, name: "Chicken chese delight", type: "Fastfood", restrurant: "manik", location: "dhanmondi", price: "240", offerPrice: "150", rating: 4 },
+    ],
+
 
     item: {
       id: null, name: "", type: "", restrurant: "", location: "", price: "", rating: ""
@@ -63,7 +68,7 @@ class App extends Component {
     var items = [...this.state.items]
     items.push(this.state.item);
     this.setState({ items });
-
+    
 
 
 
@@ -74,8 +79,9 @@ class App extends Component {
       <div>
 
         <Navbar />
-        <Table items={this.state.items}
-        />
+        <Table items={this.state.items} />
+       
+        <Offer offerItems={this.state.offerItems} />
         <Form
           item={this.props.item}
           inputName={this.inputName}
@@ -86,7 +92,7 @@ class App extends Component {
           inputRate={this.inputRate}
           addItem={this.addItem}
         />
-        <Offer/>
+        
         <Footer/>
       </div>
     );
