@@ -15,7 +15,7 @@ export class Footer extends Component {
             </div>
             <div class="footer-copyright">
                 <div class="container">
-                    © 2018 Copyright Md. Imran Khan
+                    © 2018 Copyright MD.Rafshanul Haque Siam
             
                 </div>
             </div>
